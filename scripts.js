@@ -1,4 +1,4 @@
-console.log('hi')
+
 
 const myPortfolio = {}
 
@@ -6,9 +6,9 @@ myPortfolio.projects = () => {
     const allProjects = document.querySelectorAll('.project')
 
     allProjects.forEach((project) => {
-        console.log(project)
+        
         project.addEventListener('click', ()=> {
-            console.log('clicked')
+            
             myPortfolio.loadMore(project)
         })
     })
@@ -19,7 +19,7 @@ myPortfolio.exit = () => {
 
     exitButtons.forEach(button => {
         button.addEventListener('click', () => {
-            console.log(button)
+            
             let whichProject;
 
             if(button.classList.contains('1')) {
@@ -30,7 +30,7 @@ myPortfolio.exit = () => {
                 whichProject = '3'
             }
             const content = document.querySelector(`.contentItem${whichProject}`)
-            console.log(content)
+            
             content.childNodes[1].classList.toggle('hideContent')
             content.classList.remove('animateIn')
             // content.classList.add('animateOut')
@@ -53,12 +53,12 @@ myPortfolio.headerPosition = () => {
 
 myPortfolio.allContent = document.querySelectorAll('.contentItem')
 myPortfolio.loadMore = (clickedItem) => {
-    console.log(clickedItem)
+    
     //find position of the click
 
 
     // can maybe use offSetHeight to get height of the grid item
-    // console.log(clickedItem.offsetTop)
+    
     // const heightOfGrid = `${clickedItem.clientHeight}px`
     let whichProject;
 
@@ -72,7 +72,7 @@ myPortfolio.loadMore = (clickedItem) => {
 
     const content = document.querySelector(`.contentItem${whichProject}`)
     // content.style.height = heightOfGrid;
-    console.log(content.childNodes[1])
+    
     content.style.left = `0px`
     content.style.top = `${clickedItem.offsetTop}px`
     content.classList.remove('animateOut')
@@ -90,7 +90,7 @@ myPortfolio.burger = () => {
     burgerMenu.addEventListener('click', function() {
         
         const navBar = document.querySelector('nav')
-        // console.log('click', navBar.style.display)
+        
         // if(navBar.style.display === 'none') {
         //     navBar.style.display = 'block'
         // }else if (navBar.style.display === 'block'){
