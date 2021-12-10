@@ -210,11 +210,12 @@ header {
 
         }
         h3 {
-            writing-mode:sideways-lr;
-            text-orientation: mixed;
+            // writing-mode:sideways-lr;
+            // text-orientation: mixed;
+            transform: rotate(-90deg);
             position: absolute;
-            bottom: 20%;
-            right: 49%;
+            bottom: 45%;
+            right: 32.5%;
             color: white;
         }
         

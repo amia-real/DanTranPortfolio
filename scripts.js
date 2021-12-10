@@ -43,10 +43,12 @@ myPortfolio.headerPosition = () => {
     const header = document.querySelector('h1')
     const width = header.offsetWidth
     const windowWidth = window.innerWidth
+    const h3 = document.querySelector('header h3')
     
 
     // header.addEventListener('')
     header.style.left = `${windowWidth/2 - width}px`
+    h3.style.right = `${windowWidth/2 - h3.offsetWidth/2}px`
 }
 
 myPortfolio.allContent = document.querySelectorAll('.contentItem')

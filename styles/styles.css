@@ -1180,13 +1180,11 @@ header .otherShape::after {
   background-color: black;
 }
 header h3 {
-  -webkit-writing-mode: sideways-lr;
-      -ms-writing-mode: sideways-lr;
-          writing-mode: sideways-lr;
-  text-orientation: mixed;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: absolute;
-  bottom: 20%;
-  right: 49%;
+  bottom: 45%;
+  right: 32.5%;
   color: white;
 }
 header nav {
