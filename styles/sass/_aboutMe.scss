@@ -1,0 +1,19 @@
+.aboutSection {
+    background-color: white;
+    color: black;
+
+    h2 {
+        margin-top: 80px ;
+    }
+    .aboutFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            width: 70%;
+            margin-bottom: 80px;
+        }
+    }
+}

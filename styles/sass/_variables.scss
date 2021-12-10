@@ -1,0 +1,8 @@
+@mixin basicFont($fontSize, $letterSpacing:normal, $lineHeight:normal, $fontWeight:normal, $fontStyle:normal) {
+    font-size: $fontSize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight ;
+}
