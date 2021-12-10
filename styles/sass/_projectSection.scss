@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
         h2, h3 {
             margin-top: 80px;
         }
@@ -92,6 +93,7 @@ img {
     left: -10000000000px;
     top: 10%;
     background-color: grey;
+    padding-bottom: 10px;
 
 }
 .contentTarget {
@@ -130,8 +132,9 @@ img {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        
         >*{
-            margin: 20px 0;
+            margin: 5px 0;
             margin-left: 10px;
             margin-right: 10px;
         }
@@ -141,6 +144,7 @@ img {
         >h4 {
             font-weight: bold;
         }
+        
     }
     .imgContainer {
         width: 28%;
@@ -189,13 +193,13 @@ img {
 }
 @keyframes dexpand {
     100% {
-        height: 0px;
+       
         width: 0px;
     }
 
     0% {
         width: 100%;
-        height: auto;
+       
     }
 }
 
