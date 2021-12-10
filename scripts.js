@@ -46,7 +46,7 @@ myPortfolio.headerPosition = () => {
     
 
     // header.addEventListener('')
-    header.style.left = `${windowWidth/2 - width - 50}px`
+    header.style.left = `${windowWidth/2 - width}px`
 }
 
 myPortfolio.allContent = document.querySelectorAll('.contentItem')

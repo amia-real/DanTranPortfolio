@@ -965,13 +965,11 @@ footer h4 {
 }
 
 h1 {
-  -webkit-writing-mode: sideways-lr;
-      -ms-writing-mode: sideways-lr;
-          writing-mode: sideways-lr;
-  text-orientation: mixed;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: absolute;
   left: 40%;
-  bottom: 11%;
+  bottom: 25%;
   height: auto;
   color: white;
   font-size: 60px;
@@ -986,7 +984,7 @@ h1 span {
   font-weight: bold;
   display: block;
   line-height: 73px;
-  text-shadow: 0px -238px rgba(128, 128, 128, 0.2);
+  text-shadow: 238px 0px rgba(128, 128, 128, 0.2);
 }
 
 h2 {
