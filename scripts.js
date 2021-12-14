@@ -30,12 +30,13 @@ myPortfolio.exit = () => {
                 whichProject = '3'
             }
             const content = document.querySelector(`.contentItem${whichProject}`)
-            
+            document.querySelector('.projectGrid').style.backgroundColor = 'grey';
             content.childNodes[1].classList.toggle('hideContent')
             content.classList.remove('animateIn')
             // content.classList.add('animateOut')
             setTimeout(() => {content.classList.add('animateOut')}, 1200)
             setTimeout(() => {content.style.left= `-10000000000px`}, 2000)
+            setTimeout(() => { document.querySelector('.projectGrid').style.backgroundColor = 'transparent';}, 1400)
 
     })})
 }
@@ -59,7 +60,7 @@ myPortfolio.loadMore = (clickedItem) => {
 
     // can maybe use offSetHeight to get height of the grid item
     
-    // const heightOfGrid = `${clickedItem.clientHeight}px`
+    const heightOfGrid = `${clickedItem.clientHeight}px`
     let whichProject;
 
     if(clickedItem.classList.contains('1')) {
@@ -71,13 +72,18 @@ myPortfolio.loadMore = (clickedItem) => {
     }
 
     const content = document.querySelector(`.contentItem${whichProject}`)
-    // content.style.height = heightOfGrid;
+    
     
     content.style.left = `0px`
     content.style.top = `${clickedItem.offsetTop}px`
     content.classList.remove('animateOut')
     content.classList.add('animateIn')
+    setTimeout(() => {document.querySelector('.projectGrid').style.backgroundColor = 'grey';}, 300)
+    
     setTimeout(() => {content.childNodes[1].classList.toggle('hideContent')}, 1000)
+
+    document.querySelector('.projectGrid').style.backgroundColor = 'transparent';
+    
 
     
     //trying animation in javascript

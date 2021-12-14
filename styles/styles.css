@@ -261,6 +261,9 @@ template {
   background-color: black;
   color: white;
 }
+.skillsSection h3 {
+  margin-bottom: 50px;
+}
 .skillsSection .skillFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,9 +702,6 @@ form.container button:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.infoPart > * {
-  margin-left: 40px;
-}
 
 footer {
   background-color: black;
@@ -736,8 +736,27 @@ footer .iconContainer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+footer .iconContainer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .iconContainer a:hover {
+  color: black;
+}
 footer .iconContainer i {
   font-size: 25px;
+  margin: 0 auto;
 }
 footer h4 {
   margin-bottom: 5px;
@@ -922,6 +941,31 @@ footer h4 {
   .contactFlex h2 {
     margin-top: 40px;
   }
+
+  form.container {
+    border: 2px grey solid;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  form.container .formContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form.container .formContainer > * {
+    width: 70%;
+    margin: 10px 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: 2px solid grey;
+  }
+
+  form.container textarea {
+    width: 70%;
+    margin: 10px auto;
+  }
 }
 @media (max-width: 542px) {
   .skillsSection .skillsGrid {
@@ -939,6 +983,10 @@ footer h4 {
   body header img {
     width: 150px;
     right: 10%;
+  }
+
+  form.container {
+    width: 100%;
   }
 }
 @media (max-width: 422px) {
@@ -962,6 +1010,10 @@ footer h4 {
   margin: 0;
 }
 
+button, a, i, input[submit], .pointerArrow {
+  cursor: pointer;
+}
+
 h1 {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -969,7 +1021,7 @@ h1 {
   left: 40%;
   bottom: 25%;
   height: auto;
-  color: white;
+  color: midnightblue;
   font-size: 60px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -1184,6 +1236,7 @@ header h3 {
   bottom: 45%;
   right: 32.5%;
   color: white;
+  z-index: 999999;
 }
 header nav {
   color: white;
@@ -1191,6 +1244,7 @@ header nav {
   top: 10%;
   right: 10%;
   width: 40%;
+  z-index: 999999;
 }
 header nav ul {
   display: -webkit-box;

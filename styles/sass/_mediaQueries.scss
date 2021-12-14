@@ -147,6 +147,25 @@
     .contactFlex h2 {
         margin-top: 40px;
     }
+    form.container{
+        border: 2px grey solid;
+        width: 80%;
+        margin: 0 auto;
+    }
+    form.container .formContainer{
+        flex-direction: column;
+        >*{
+            width: 70%;
+            margin: 10px 0;
+            align-self: center;
+            border: 2px solid grey;
+        }
+    }
+
+    form.container textarea {
+        width: 70%;
+        margin: 10px auto;
+    }
 }
 
 
@@ -170,6 +189,9 @@
     body header img {
         width: 150px;
         right: 10%;
+    }
+    form.container {
+         width: 100%;
     }
 }
 
